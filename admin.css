@@ -1,0 +1,140 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.navbar {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.navbar h2 {
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 15px 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+}
+
+.navbar ul li a.active {
+    background-color: #007bff;
+    color: rgb(58, 47, 47);
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+}
+
+/* Add button styling */
+.add-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    float: right;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #333;
+    color: white;
+}
+
+/* Edit and Delete button styling */
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #ffc107;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #e0a800;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.editbtn{
+    margin-left: 2px;
+    padding: 10px;
+    background-color: #e0a800;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.deletebtn{
+    margin-left: 2px;
+    padding: 10px;
+    color: white;
+    background-color: red;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 3px;
+}

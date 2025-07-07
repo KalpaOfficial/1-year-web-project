@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <title>Exam Information Center</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Exam</a></li>
+                        <li><a href="#">Result</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                
+                
+                  
+                    <img src="./photo/User-avatar.svg.png" alt="User Icon" class="icon">
+                    <div class="sub-menu-wrap">
+                        <div class="sub-menu">
+                            <div class="user-info">
+                                <h4>User Name</h4>
+                                
+                
+                            </div>
+                            <div class="logout">
+                                <a href="#">Logout</a>
+                                <script>
+                                    const avatar = document.querySelector('.icon');
+                                    const dropdown = document.querySelector('.sub-menu-wrap');
+                                
+                                    avatar.addEventListener('click', () => {
+                                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                                    });
+                                
+                                    // Optional: Close dropdown when clicking outside
+                                    window.addEventListener('click', (e) => {
+                                        if (!avatar.contains(e.target) && !dropdown.contains(e.target)) {
+                                            dropdown.style.display = 'none';
+                                        }
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                
+                </nav>
+            </div>
+        </header>
+    
+        
+           
+            <div class="photo">
+                <img src="./photo/ph_47064_181458.jpg" alt="poto" class="pto">
+                <div class="overlay">
+                    <h2 id="welcomeMessage">Hi, User!</h2>
+                </div>
+            </div>
+      
+
+            <div class="welcome">
+                <h2>Welcome to Edu Online Examination System!</h2>
+                <p>We are pleased to have you with us. Our platform is designed to provide a seamless and secure examination experience. Whether you are a student, an instructor, or an administrator, 
+                    this system offers all the tools you need to excel and manage your assessments effectively.</p>
+                <p>Feel free to navigate through the sections for your upcoming exams, results, and support. If you need any assistance, our support team is here to help.</p>
+                <p>Good luck with your exams, and we wish you the best in achieving your academic goals!</p>
+                <p><strong>Edu Online Examination Team</strong></p>
+
+            </div>
+            
+    
+            <div class="announcement-section">
+                <h2>Announcements, Updates, and News</h2>
+            
+                <!-- Announcement 1 -->
+                <div class="announcement-card">
+                    <h3>Important: Exam Schedule Released</h3>
+                    <p class="date">Date: September 25, 2024</p>
+                    <p>The final exam schedule for the fall semester has been published. Please check your exam dates in the 'Exam' section and ensure you're prepared. If you have any scheduling conflicts, reach out to support immediately.</p>
+                    <a href="#">Read More</a>
+                </div>
+            
+                <!-- Announcement 2 -->
+                <div class="announcement-card">
+                    <h3>System Update: Improved User Interface</h3>
+                    <p class="date">Date: September 20, 2024</p>
+                    <p>We have introduced a new user interface to enhance your exam experience. The platform is now more user-friendly and responsive. Explore the new changes and let us know your feedback!</p>
+                    <a href="#">Read More</a>
+                </div>
+            
+                <!-- Announcement 3 -->
+                <div class="announcement-card">
+                    <h3>Reminder: Submit Your Assignments</h3>
+                    <p class="date">Date: September 15, 2024</p>
+                    <p>This is a friendly reminder to submit all your pending assignments before the deadline. Late submissions will incur penalties unless a valid reason is provided.</p>
+                    <a href="#">Read More</a>
+                </div>
+            
+                <!-- Announcement 4 -->
+                <div class="announcement-card">
+                    <h3>Upcoming Webinar: Exam Preparation Tips</h3>
+                    <p class="date">Date: September 10, 2024</p>
+                    <p>Join us for an exclusive webinar where our experts will share essential tips to prepare effectively for your upcoming exams. Don’t miss out on this valuable session!</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            
+         
+    
+            <div class="sections">
+                <div class="exam"><a href="#">Exam</a></div>
+                <div class="result"><a href="#">Result</a></div>
+                <div class="Support"><a href="#">Support</a></div>
+                <div class="aboutus"><a href="#">About Us</a></div>
+            </div>
+    
+            <div class="recent-activities-section">
+                <h2>Recent Activities</h2>
+            
+                <!-- Activity 1 -->
+                <div class="activity-card">
+                    <p class="activity-date">September 25, 2024</p>
+                    <p><strong>Exam Submitted:</strong> Final Year Mathematics Exam has been submitted successfully.</p>
+                    <a href="#">View Details</a>
+                </div>
+            
+                <!-- Activity 2 -->
+                <div class="activity-card">
+                    <p class="activity-date">September 23, 2024</p>
+                    <p><strong>Result Released:</strong> Physics Midterm results are now available. Check your scores.</p>
+                    <a href="#">View Results</a>
+                </div>
+            
+                <!-- Activity 3 -->
+                <div class="activity-card">
+                    <p class="activity-date">September 20, 2024</p>
+                    <p><strong>Support Ticket Resolved:</strong> Your request regarding the exam rescheduling has been successfully addressed.</p>
+                    <a href="#">View Support Ticket</a>
+                </div>
+            
+                <!-- Activity 4 -->
+                <div class="activity-card">
+                    <p class="activity-date">September 18, 2024</p>
+                    <p><strong>Webinar Attended:</strong> You attended the 'Effective Exam Preparation Strategies' webinar.</p>
+                    <a href="#">View Webinar Details</a>
+                </div>
+            </div>
+            
+            
+        
+    
+            <footer>
+                <div class="footer-content">
+                    <!-- Logo Section -->
+                    <div class="footer-logo">
+                        <img src="logo-placeholder.png" alt="Edu Online Logo">
+                    </div>
+            
+                    <!-- Contact Information Section -->
+                    <div class="footer-contact">
+                        <h3>Contact</h3>
+                        <p>Address: 1234 Street, Colombo, Sri Lanka</p>
+                        <p>Email: info@eduonline.com</p>
+                        <p>Hotline: +94 112 345 678</p>
+                        <p>Telephone: +94 112 345 679</p>
+                    </div>
+            
+                    <!-- Quick Links Section -->
+                    <div class="footer-quick-links">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#">Exam</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+                <!-- Bottom Footer Section -->
+                <div class="footer-bottom">
+                    <p>Designed By Kalpa | &copy; 2024 - Edu Online Examination, Sri Lanka. All Rights Reserved</p>
+                </div>
+            </footer>
+            
+    
+    </div>
+    
+</body>  
+</html>
